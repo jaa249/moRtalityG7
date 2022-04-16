@@ -1,0 +1,10 @@
+Package: moRtality
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Group 7
+Maintainer: The package maintainer <jaa249@pitt.edu>
+Description:This package is used to calculate Adjusted and Un-adjusted Mortality and to create a live tableusing the data provided by the imported file.
+License: University of Pittsburgh
+Encoding: UTF-8
+LazyData: true
