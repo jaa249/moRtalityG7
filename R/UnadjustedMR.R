@@ -1,3 +1,6 @@
+library(tidyverse)
+library(ggplot2)
+library(rlang)
 
 
 CRUDE <- function(Population, Deaths, Rate){
