@@ -2,8 +2,8 @@ Package: moRtality
 Type: Package
 Title: Epidemiological Research Tools for Mortality
 Version: 0.1.0
-Author: Jamal Adrien, Patrick A. Peterson, Dengxiaoyu Shi 
-Maintainer: The package maintainer Group 7
+Author: Jamal Adrien, Paterick Peterson, Dengxiaoyu Shi 
+Maintainer: <jaa249@pitt.edu>
 Description:This package is used to calculate Adjusted and Un-adjusted Mortality and to create a live tableusing the data provided by the imported file.
 License: University of Pittsburgh BIOST 2094 Advanced R Computing
 Encoding: UTF-8

@@ -1,8 +1,6 @@
-library(tidyverse)
-library(ggplot2)
-library(rlang)
 
-CRUDE <- function(PopulationAtRisk, Deaths, Rate){
+
+CRUDE <- function(Population, Deaths, Rate){
 
   if (Deaths > PopulationAtRisk){
     rlang::catch_cnd(abort(message = "Deaths are greater than Population At Risk! Check for errors in the data source!",
@@ -19,4 +17,3 @@ CRUDE <- function(PopulationAtRisk, Deaths, Rate){
       }
     }
   }
-
