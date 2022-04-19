@@ -28,9 +28,9 @@ Crude(200000,4564,True)
 
 Life Table:
 
-LT()
+LT(AgeGroup = Age, Population = Population, ExpectedDeaths = PreviousDeaths, Deaths = Current Deaths)
 or
-LT()
+LT(ASMRdata$Age,ASMRdata$Total1,mortalitycount$PY, mortalitycount$Total)
 
 
 }

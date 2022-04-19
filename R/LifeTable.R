@@ -2,12 +2,14 @@ library(tidyverse)
 library(ggplot2)
 library(rlang)
 
-LT <- function(Population, ExpectedDeaths){
+LT <- function(AgeGroup, Population, ExpectedDeaths, Deaths){
 
   AMR <- AMR(Population, ExpectedDeaths, 1000)
   CRUDE <- CRUDE(Population, Deaths, TRUE)
   SMR <- SMR(ExpectedDeaths, Deaths)
 
-}
 
-data.frame(AgeGroup, Population, ExpectedDeaths,Deaths, SMR, CRUDE, AMR)
+  DF = data.frame(AgeGroup, Population, ExpectedDeaths, Deaths, CRUDE, AMR, SMR)
+
+  return(DF)
+}
