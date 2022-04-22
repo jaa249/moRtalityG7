@@ -12,7 +12,7 @@ CRUDE <- function(Population, Deaths, Rate){
 
   } else {
     if (missing(Rate) || Rate ==  FALSE){
-      (Deaths / (Population)) * 100
+      (Deaths / (Population)) * 1000
      } else {
        if (Rate == TRUE){
        (Deaths / (Population))
