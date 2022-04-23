@@ -15,7 +15,7 @@ LT <- function(AgeGroup, Population, Deaths, perPopulation, ExpectedDeaths){
   AMR <- AMR(Population, Deaths, perPopulation)
   CRUDE_Rate <- CRUDE(Population, Deaths, TRUE)
 
-  if (SMR == 0){
+  if (sum(SMR) == 0){
 
     DF1 = data.frame(AgeGroup, Population, Deaths, CRUDE_Rate, AMR)
 
@@ -29,4 +29,3 @@ LT <- function(AgeGroup, Population, Deaths, perPopulation, ExpectedDeaths){
   }
 
 }
-

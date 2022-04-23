@@ -4,7 +4,7 @@ library(rlang)
 
 AMR <- function(Population, Deaths, perPopulation){
 
-  if (Deaths > Population){
+  if (sum(Deaths > Population)==length(Deaths)){
     rlang::catch_cnd(abort(message = "Expected deaths are greater than Population! Check for errors in the data source!",
                            .subclass = "death_overflow"
                            ))
